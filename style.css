@@ -1,9 +1,9 @@
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 30px;
+    padding: 20px;
     background: #f5f7fa;
 }
 
@@ -19,12 +19,6 @@ h1 {
     width: 300px;
     text-align: center;
     cursor: pointer;
-    transition: background 0.3s, border-color 0.3s;
-}
-
-.drop-zone:hover {
-    background: #e6f2ff;
-    border-color: #005bb5;
 }
 
 input, button {
@@ -54,53 +48,20 @@ button:hover {
 
 .preview {
     border: 1px solid #ddd;
-    width: 200px;
-    height: auto;
+    width: 220px;
+    min-height: 220px;
     padding: 10px;
     background: #fff;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     border-radius: 8px;
-    overflow: hidden;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
 .preview img {
     max-width: 100%;
-    max-height: 120px;
+    max-height: 150px;
     margin-bottom: 10px;
-}
-
-.preview div, .preview a {
-    margin-bottom: 5px;
-    text-align: center;
-}
-
-.preview div.preview-message {
-    font-size: 12px;
-    color: #666;
-    margin-top: 5px;
-    text-align: center;
-}
-
-.preview a {
-    color: #0078d7;
-    text-decoration: none;
-    font-weight: 500;
-}
-
-.preview a:hover {
-    text-decoration: underline;
-}
-
-a {
-    display: block;
-    margin-top: 10px;
-    color: #0078d7;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
 }
